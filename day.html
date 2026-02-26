@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="day.css">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <div class="box">
+    <div class="text">
+        <h2>Days lived calculator</h2>
+        <p>enter your date of birth:</p>
+       <form>
+        <input type="date" class="date_input" id="dob_input"><br>
+        <button type="button" class="submit_button" onclick="calculatedate()">Submit</button>
+        <div class="result-text" id="result"></div>
+       </form>
+    </div>
+    </div>
+    <script>
+        function calculatedate()
+        {
+            const dob=document.getElementById('dob_input').value;
+            console.log(dob);
+            if(!dob){
+                document.getElementById('result').innerText='please select a date';
+                return;
+            }
+            const dobobj=new Date(dob);
+            const today=new Date();
+            const datediff=Math.abs(today-dobobj);
+            console.log(datediff);
+            const daydiff=Math.ceil(datediff/(1000*60*60*24));
+            document.getElementById('result').innerText=`you have lived for approximately ${daydiff.toLocaleString()} days`;
+            return;
+        }
+    </script>
+    </center>
+</body>
+</html>

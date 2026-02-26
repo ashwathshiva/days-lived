@@ -1,0 +1,42 @@
+body {
+  background-image: url("1.jpg");
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+   font-family: Arial, sans-serif;  
+  color: white; 
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+                 
+}
+.box
+{
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+   
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+.date_input{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.03);
+    color: white;
+    border-width: 1;
+    border-color:white;
+    margin-bottom: 30px;
+}
+.submit_button
+{
+ 
+  background-color: rgb(121, 66, 158);
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
