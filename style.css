@@ -1,5 +1,5 @@
 body {
-  background-image: url("1.jpg");
+  background-image: url("log.png");
   background-size: cover;        
   background-position: center;   
   background-repeat: no-repeat;  
@@ -40,3 +40,4 @@ body {
   border: none;
   cursor: pointer;
 }
+
