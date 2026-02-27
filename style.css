@@ -1,5 +1,5 @@
 body {
-  background-image: url("log.png");
+  background-image: url("signup.png");
   background-size: cover;        
   background-position: center;   
   background-repeat: no-repeat;  
@@ -40,4 +40,5 @@ body {
   border: none;
   cursor: pointer;
 }
+
 
